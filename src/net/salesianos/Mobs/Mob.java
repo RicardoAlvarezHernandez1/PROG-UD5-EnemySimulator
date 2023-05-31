@@ -1,4 +1,4 @@
-
+package net.salesianos.Mobs;
 
 
 public abstract class Mob {

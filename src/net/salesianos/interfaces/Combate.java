@@ -1,4 +1,4 @@
-import net.salesianos.interfaces.Danno;
+package net.salesianos.interfaces;
 
 public interface Combate extends Danno {
     

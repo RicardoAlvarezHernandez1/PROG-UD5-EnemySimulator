@@ -1,4 +1,5 @@
 package net.salesianos.Personajes;
+ import net.salesianos.interfaces.*;
 
 public class Personaje implements Combate{
     
@@ -24,7 +25,7 @@ public class Personaje implements Combate{
         this.salud = this.salud - daño;
 
 
-        System.out.prinln("Daño recibido : " + daño + " , Salud restante : " + this.salud);
+        System.out.println("Daño recibido : " + daño + " , Salud restante : " + this.salud);
     }
 
     
