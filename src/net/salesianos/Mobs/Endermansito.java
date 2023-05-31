@@ -2,8 +2,6 @@ package net.salesianos.Mobs;
 
 public class Endermansito extends MobHostil{
 
-    int fuerza;
-
     public Endermansito(int salud) {
         super(14);
         fuerza = 6;      

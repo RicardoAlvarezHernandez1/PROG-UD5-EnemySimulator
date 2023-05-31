@@ -2,7 +2,7 @@ package net.salesianos.Mobs;
 
 public class Zombisito extends MobHostil{
 
-    int fuerza;
+    
 
     public Zombisito(int salud) {
         super(10);
@@ -14,6 +14,7 @@ public class Zombisito extends MobHostil{
         System.out.println("Se mueve hacia el personaje (que coñazo dan los zombis en verdad) ");
     }
 
+    
 
     
 }
