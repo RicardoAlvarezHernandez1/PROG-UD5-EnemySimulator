@@ -13,6 +13,44 @@ public class Personaje implements Combate{
         this.fuerza = fuerza;
     }
 
+    
+
+    public int getSalud() {
+        return salud;
+    }
+
+
+
+    public void setSalud(int salud) {
+        this.salud = salud;
+    }
+
+
+
+    public int getDefensa() {
+        return defensa;
+    }
+
+
+
+    public void setDefensa(int defensa) {
+        this.defensa = defensa;
+    }
+
+
+
+    public int getFuerza() {
+        return fuerza;
+    }
+
+
+
+    public void setFuerza(int fuerza) {
+        this.fuerza = fuerza;
+    }
+
+
+
     @Override
     public int atacar(){
         return this.fuerza;
@@ -22,9 +60,16 @@ public class Personaje implements Combate{
     @Override
     public void recibirAtaque(int ataque){
         int daño = ataque - this.defensa;
-        this.salud = this.salud - daño;
-
-
+        
+        if (daño < 0) {
+            daño = 0;
+        } else if (this.salud <= 0){
+            this.salud = 0;
+        } else {
+            this.salud = this.salud - daño;
+        }
+            
+        
         System.out.println("Daño recibido : " + daño + " , Salud restante : " + this.salud);
     }
 
