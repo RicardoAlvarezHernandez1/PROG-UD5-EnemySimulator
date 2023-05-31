@@ -2,7 +2,7 @@
 
 
 public abstract class Mob {
-    private int salud;
+    protected int salud;
 
     public Mob(int salud) {
         this.salud = salud;
